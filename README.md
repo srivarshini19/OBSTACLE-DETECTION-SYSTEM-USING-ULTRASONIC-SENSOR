@@ -18,7 +18,8 @@ Tinkercad provides a simulation environment where this circuit can be virtually 
 
 
 
-## Circuit Diagram:
+## Circuit Diagram:![WhatsApp Image 2025-11-18 at 14 33 26_e4df82a1](https://github.com/user-attachments/assets/b930f662-0b1b-4c1e-8302-c38e69d8cea9)
+
  
 ## Procedure: //Modify the procedure based on your circuit
 
@@ -53,9 +54,38 @@ Step 7: Save Your Work
 
 
 ## Code:
+```
+#define ultraPin 7
 
+long duration;
+int distance;
 
-## Output:
+void setup() {
+  pinMode(ultraPin, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  pinMode(ultraPin, OUTPUT);
+  digitalWrite(ultraPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(ultraPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(ultraPin, LOW);
+
+  pinMode(ultraPin, INPUT);
+  duration = pulseIn(ultraPin, HIGH);
+
+  distance = duration * 0.034 / 2;
+  Serial.print("Distance: ");
+  Serial.print(distance);
+  Serial.println(" cm");
+}
+
+```
+## Output:![WhatsApp Image 2025-11-18 at 14 29 56_6d59ce82](https://github.com/user-attachments/assets/a7f62be4-ec42-4bd4-a005-5c482829b941)
+![WhatsApp Image 2025-11-18 at 14 33 48_45fc8d1d](https://github.com/user-attachments/assets/d59cb464-5c39-4c3c-8951-dbac4fe7de7d)
+
  
 
 
