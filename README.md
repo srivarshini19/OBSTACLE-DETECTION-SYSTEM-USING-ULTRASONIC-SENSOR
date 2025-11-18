@@ -18,7 +18,8 @@ Tinkercad provides a simulation environment where this circuit can be virtually 
 
 
 
-## Circuit Diagram:![WhatsApp Image 2025-11-18 at 14 33 26_e4df82a1](https://github.com/user-attachments/assets/b930f662-0b1b-4c1e-8302-c38e69d8cea9)
+## Circuit Diagram:
+![WhatsApp Image 2025-11-18 at 14 33 26_e4df82a1](https://github.com/user-attachments/assets/b930f662-0b1b-4c1e-8302-c38e69d8cea9)
 
  
 ## Procedure: //Modify the procedure based on your circuit
